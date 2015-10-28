@@ -1,0 +1,152 @@
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  @media @tablet,
+  @desktop {
+    .features {
+      &--1 {
+        color: white;
+        background: #81b3d2;
+      }
+      &--2 {
+        background: #eeeeee;
+      }
+      width: 33.333%;
+      height: 255px;
+      text-transform: uppercase;
+      text-align: center;
+      &__header {
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-top: 51px;
+        margin-bottom: 11px;
+        width: 38%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &__number,&__descr {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__descr {
+        margin-top: 26px;
+      }
+    }
+    .img {
+      width: 66.666%;
+      display: inline-block;
+      &--1 {
+        background: url("../img/photo-city@1x.jpg") center no-repeat;
+      }
+      &--2 {
+        background: url("../img/photo-bridge@1x.jpg") center no-repeat;
+      }
+    }
+    .recommendation {
+      width: 33.333%;
+      height: 330px;
+      text-align: center;
+      text-transform: uppercase;
+      background: white;
+      object {
+        margin-top: 56px;
+        margin-bottom: 26px;
+      }
+      &__header {
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      &__descr {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+  @media @mobile {
+    .features {
+      &--1 {
+        color: white;
+        background: #81b3d2;
+        margin-top: -20px;
+      }
+      &--2 {
+        background: #eeeeee;
+        &:after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 87.5%;
+          background: #d6d6d6;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 35px;
+        }
+        &:last-child:after {
+          display: none;
+        }
+      }
+      width: 100%;
+      height: 210px;
+      text-transform: uppercase;
+      text-align: center;
+      &__header {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-top: 56px;
+        margin-bottom: 11px;
+      }
+      &__number,&__descr {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__descr {
+        margin-top: 16px;
+      }
+    }
+    .img {
+      width: 100%;
+      height: 256px;
+      &--1 {
+        background: url("../img/photo-city@1x.jpg") center no-repeat;
+      }
+      &--2 {
+        background: url("../img/photo-bridge@1x.jpg") center no-repeat;
+      }
+    }
+    .recommendation {
+      width: 100%;
+      height: 159px;
+      text-transform: uppercase;
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      object {
+        height: 37px;
+        width: 37px;
+        margin-top: 30px;
+        display: inline-block;
+        margin-left: 6.8%;
+      }
+      &__header {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 41px;
+        margin-left: 3%;
+      }
+      &__descr {
+        font-size: 14px;
+        line-height: 21px;
+        display: block;
+        width: 100%;
+        margin-left: 17%;
+      }
+    }
+  }
+}
