@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         },
         concat: {
             dist: {
-                src: [ 'source/js/script.js'],
+                src: [ 'source/js/script.js', 'source/js/datepicker-ru.js'],
                 dest: 'source/js/script_concat.js',
             },
         },
