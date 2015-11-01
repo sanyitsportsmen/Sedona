@@ -12,8 +12,9 @@ function initMap() {
 }
 (function($) {
     $(document).ready(function () {
-        $("#date--in, #date--out").datepicker($.datepicker.regional["ru"]);
-        $("#date--in, #date--out").datepicker('option', "showAnim", "slideDown");
+        var calendarInput = $("#date--in, #date--out");
+        calendarInput.datepicker($.datepicker.regional["ru"]);
+        calendarInput.datepicker('option', "showAnim", "slideDown");
         $('#trigger-in').click(function (event) {
             event.preventDefault();
             $("#date--in").focus();
@@ -65,7 +66,7 @@ function initMap() {
         function plusButton(selector, selectorEdit) {
             $(selector).click(function (event) {
                 event.preventDefault();
-                self = $(selectorEdit);
+                var self = $(selectorEdit);
                 self.val(+self.val() + 1);
             });
         }
@@ -73,7 +74,7 @@ function initMap() {
         function minusButton(selector, selectorEdit) {
             $(selector).click(function (event) {
                 event.preventDefault();
-                self = $(selectorEdit);
+                var self = $(selectorEdit);
                 if (self.val() > 0)
                     self.val(+self.val() - 1);
             });
