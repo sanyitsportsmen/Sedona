@@ -1,102 +1,72 @@
 .intro {
-  background: url('../img/photo-background@1x.jpg');
-  background-position: center;
+  background: url('../img/photo-background@1x.jpg') center;
   text-align: center;
+  padding-top: 76px;
+  font-size: 0;
+  @media @mobile {
+    padding-top: 47px;
+  }
   &__greeting {
+    background: url("../img/text-welcome.svg") no-repeat;
+    background-size: 100%;
+    margin: auto;
     @media @tablet,
     @desktop {
-      &--desktop {
-        margin-top: 76px;
-        width: 188px;
-        height: 45px;
-      }
-      &--mobile {
-        display: none;
-      }
+      width: 192px;
+      height: 45px;
     }
     @media @mobile {
-      &--desktop {
-        display: none;
-      }
-      &--mobile {
-        margin-top: 47px;
-        width: 144px;
-        height: 34px;
-      }
+      width: 148px;
+      height: 34px;
     }
   }
   &__to {
     display: block;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto auto auto;
+    background: url("../img/text-tothegorgeous.svg") no-repeat center;
+    background-size: 100%;
     @media @tablet,
     @desktop {
-      &--desktop {
-        width: 256px;
-        height: 29px;
-      }
-      &--mobile {
-        display: none;
-      }
+      width: 270px;
+      height: 36px;
     }
     @media @mobile {
-      &--desktop {
-        display: none;
-      }
-      &--mobile {
-        width: 196px;
-        height: 25px;
-      }
+      width: 207px;
+      height: 32px;
     }
   }
   &__title {
     display: block;
     margin: auto;
+    background: url("../img/text-sedona.svg") no-repeat center;
+    background-size: 100%;
     @media @tablet,
     @desktop {
-      &--desktop {
-        width: 460px;
-        height: 80px;
-        margin-top: 52px;
-      }
-      &--mobile {
-        display: none;
-      }
+      width: 466px;
+      height: 80px;
+      margin-top: 52px;
     }
     @media @mobile {
-      &--desktop {
-        display: none;
-      }
-      &--mobile {
-        width: 280px;
-        height: 48px;
-        margin-top: 60px;
-      }
+      width: 280px;
+      height: 48px;
+      margin-top: 60px;
     }
   }
   &__text {
     display: block;
     margin: auto;
+    background: url("../img/text-becausecanyon.svg") no-repeat center;
+    background-size: 100%;
     @media @tablet,
     @desktop {
-      &--desktop {
-        width: 294px;
-        height: 79px;
-        margin-top: 56px;
-      }
-      &--mobile {
-        display: none;
-      }
+      width: 294px;
+      height: 79px;
+      margin-top: 56px;
     }
     @media @mobile {
-      &--desktop {
-        display: none;
-      }
-      &--mobile {
-        width: 197px;
-        height: 50px;
-        margin-top: 69px;
-      }
+      width: 197px;
+      height: 50px;
+      margin-top: 69px;
     }
   }
   .offer {
@@ -183,20 +153,4 @@
       }
     }
   }
-}
-
-#greeting{
-  fill: #81b3d2;
-}
-
-#to {
-  fill: #766357;
-}
-
-#title {
-  fill: #ffffff;
-}
-
-#text {
-  fill: #ffffff;
 }
