@@ -1,4 +1,4 @@
-function initMap() {
+function initialize() {
     var officeLatLng = new google.maps.LatLng(35.2441049, -113.2101105);
     var map = new google.maps.Map(document.getElementById('map'), {
         center: officeLatLng,
@@ -10,8 +10,12 @@ function initMap() {
         map.setCenter(officeLatLng);
     });
 }
+
+
 (function($) {
     $(document).ready(function () {
+        google.maps.event.addDomListener(window, 'load', initialize);
+
         var calendarInput = $("#date--in, #date--out");
         calendarInput.datepicker($.datepicker.regional["ru"]);
         calendarInput.datepicker('option', "showAnim", "slideDown");
