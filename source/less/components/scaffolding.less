@@ -48,3 +48,27 @@ ul {
   padding: 0;
 }
 
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  &__inner {
+    background-image: url(../img/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 260px;
+    width: 260px;
+    margin-top: -130px;
+    margin-left: -130px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
+}

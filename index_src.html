@@ -7,10 +7,10 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="build/css/style.min.css"/>
 
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <title>Sedona</title>
 </head>
 <body>
@@ -98,6 +98,9 @@
 </svg>
     </div>
     <div class="content">
+      <div class="loader">
+        <div class="loader__inner"></div>
+      </div>
         <!-- Header -->
         <header class="page-header">
             <nav class="main-nav">
@@ -117,7 +120,7 @@
         </header>
         <!-- / Header -->
         <!-- Intro -->
-        <div class="intro">
+        <div class="intro parallax-window" data-parallax="scroll" data-image-src="build/img/photo-background@1x.jpg">
             <div class="intro__greeting">WELCOME</div>
             <div class="intro__to">to the gorgeous</div>
 			<div class="intro__title">SEDONA</div>
