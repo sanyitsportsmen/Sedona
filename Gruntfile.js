@@ -37,10 +37,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        imagemin: {
+            images: {
+                options: {
+                    optimizationLevel: 3
+                },
+                files: [{
+                    expand: true,
+                    src: ["build/img/*.{png,jpg,gif,svg}"]
+                }]
+            }
+        },
         copy: {
             main: {
                 files: [
                     {expand: true, cwd: 'source/img/', src: ['**'], dest: 'build/img/'},
+                    {expand: true, cwd: 'source/js/libs', src: ['**'], dest: 'build/js/libs/'},
                 ],
             },
         },
@@ -74,5 +86,5 @@ module.exports = function(grunt) {
         }
     });
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build:production', ['less', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'copy', 'htmlmin']);
+    grunt.registerTask('build:production', ['less', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'copy', 'imagemin', 'htmlmin']);
 }
